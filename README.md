@@ -4,4 +4,4 @@ Rama: flexbox
 
 Taller 1 del curso de Aplicaciones Móviles
 
-- Aqui están los retos de css dinner https://flukeout.github.io/
+- Aqui están los retos de flex dinner https://flexboxfroggy.com/#es
