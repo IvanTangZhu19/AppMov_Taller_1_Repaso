@@ -12,3 +12,7 @@ Taller 1 del curso de Aplicaciones Móviles
  - reto: Programas de Javascript de animación y texto
  - diagrama: Imagenes del diagrama de clases en papel y digital
  - maquetacion: Archivo HTML y CSS de la pagina elegida
+
+- Comandos utilizados:
+ - git branch [nombre rama] : Crea la rama
+ - git checkout [nombre rama]: Cambiar entre ramas
