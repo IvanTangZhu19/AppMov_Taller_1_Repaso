@@ -1,7 +1,7 @@
 # AppMov_Taller_1_Repaso
 
-Rama: flexbox
+Rama: gridlayout
 
 Taller 1 del curso de Aplicaciones Móviles
 
-- Aqui están los retos de flex dinner https://flexboxfroggy.com/#es
+- Aqui están los retos de gridgarden https://cssgridgarden.com/#es
