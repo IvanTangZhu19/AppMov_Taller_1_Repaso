@@ -1,14 +1,10 @@
 # AppMov_Taller_1_Repaso
 
-Rama: Principal
+Rama: reto
 
 Taller 1 del curso de Aplicaciones Móviles
 
-- Explicacion de las ramas:
+Aqui se encuentra los retos de javascript:
 
- - css: Retos de css dinner https://flukeout.github.io/
- - flexbox: Retos de flex froggy https://flexboxfroggy.com/#es
- - gridlayout: Retos de gridgarden https://cssgridgarden.com/#es
- - reto: Programas de Javascript de animación y texto
- - diagrama: Imagenes del diagrama de clases en papel y digital
- - maquetacion: Archivo HTML y CSS de la pagina elegida
+- Animación y sonido
+- Campo de texto que muestra en tiempo real la cantidad de caracteres ingresados
