@@ -1,0 +1,43 @@
+body{
+    background-color:lightblue;
+  }
+  #paisaje{
+    overflow: visible;
+    position:relative;
+    width:800px;
+    height:500px;
+    border:1px solid gray;
+    background:#00BFFF;
+    margin:30px auto;
+    overflow:hidden;
+  }
+  .objeto{
+    position:absolute;
+  }
+  #sol{
+    z-index: 1;
+    top:45px;
+    right:70px;
+  }
+  #nevado{
+    bottom:-17px;
+    left:-17px;
+  }
+  #nevado2{
+    bottom:-17px;
+    right:-30px;
+  }
+  #bici{
+    bottom:-25px;
+    left:350px;
+    z-index:1;
+  }
+  #nube{
+    z-index:1;
+  }
+  
+  #arbol{
+    right:80px;
+    bottom:-4px;
+    z-index:2;
+  }
