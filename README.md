@@ -14,7 +14,9 @@ Taller 1 del curso de Aplicaciones Móviles
   - maquetacion: Archivo HTML y CSS de la pagina elegida
 
 - Comandos utilizados:
-  - git branch [nombre rama]  : Crea la rama
-  - git checkout [nombre rama]: Cambiar entre ramas
+  - `git branch [nombre rama]`: Crea la rama
+  - `git checkout [nombre rama]`: Cambiar entre ramas
+  - `git push origin [nombre rama]`: Push a una rama
+  - `git pull origin [nombre rama]`: Pull de una rama
 
 - Enlace de la presentación: 
