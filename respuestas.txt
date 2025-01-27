@@ -1,62 +1,61 @@
-Respuestas de los retos de flexbox froggy
+Respuestas del reto de gridgarden
 
-1. 	justify-content: flex-end;
+1. 	grid-column-start: 3;
 
-2. 	justify-content: center;
+2. 	grid-column-start: 5;
 
-3. 	justify-content: space-around;
+3. 	grid-column-end: 4;
 
-4. 	justify-content: space-between; 
+4. 	grid-column-end: 2;
 
-5. 	align-items: flex-end;
+5. 	grid-column-end: -2;
 
-6. 	align-items: center;
-   	justify-content: center;
+6. 	grid-column-start: -3;
 
-7. 	align-items: end;
-   	justify-content: space-around;
+7. 	grid-column-end: span 2;
 
-8. 	flex-direction: row-reverse;
+8. 	grid-column-end: span 5;
 
-9. 	flex-direction: column;
+9. 	grid-column-start: span 3;
 
-10.	flex-direction: row-reverse;
-	justify-content: start;
+10. 	grid-column: 4/6;
 
-11. 	justify-content: end;
-	flex-direction: column;
+11. 	grid-column: 2/ span 3;
 
-12. 	justify-content: space-between;
-	flex-direction: column-reverse;
+12. 	grid-row-start: 3;
 
-13. 	justify-content: center;
-	flex-direction: row-reverse;
-	align-items: end;
+13. 	grid-row: 3/6;
 
-14. 	order: 2;
+14.	grid-column: 2;
+	grid-row: 5;
 
-15. 	order: -1;
+15. 	grid-column: 2/ span 4;
+	grid-row: 1 / span 5;
 
-16.	align-self: end;
+16. 	grid-area: 1 / 2 / 4 / 6;
 
-17. 	order: 1;
-	align-self: end;
+17. 	grid-area: 2 / 3 / 5 / 6;
 
-18. 	flex-wrap: wrap;
+18. 	order: 1;
 
-19. 	flex-wrap: wrap;
-	flex-direction: column-reverse;	
+19. 	order: -1;
 
-20. 	flex-flow: column wrap;
+20. 	grid-template-columns: 50% 50%;
 
-21. 	align-content: flex-start;
+21. 	grid-template-columns: repeat(8, 12.5%);
 
-22. 	align-content: end;
+22. 	grid-template-columns: 100px 3em 40%;
 
-23. 	flex-direction: column-reverse;
-	align-content: center;
+23. 	grid-template-columns: 1fr 5fr;
+ 
+24. 	grid-template-columns: 50px 1fr 1fr 1fr 50px;
 
-24. 	flex-direction: column-reverse;
-	flex-wrap: wrap-reverse;
-	align-content: space-between;
-	justify-content: center;
+25. 	grid-template-columns: 75px 3fr 2fr;
+
+26. 	grid-template-rows: 50px 0 0 0 1fr;
+
+27. 	grid-template: 60% 0 / 200px;	
+
+28. 	grid-template: 1fr 50px / 20% 80%;
+
+
