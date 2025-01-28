@@ -11,7 +11,7 @@ Taller 1 del curso de Aplicaciones Móviles
   - gridlayout: Retos de gridgarden https://cssgridgarden.com/#es
   - reto: Programas de Javascript de animación/sonido y texto
   - diagrama: Imagenes del diagrama de clases en papel y digital
-  - maquetacion: Archivo HTML y CSS de la pagina elegida
+  - proyecto: Imagenes, archivo HTML y CSS de la pagina elegida
 
 - Comandos utilizados:
   - `git branch [nombre rama]`: Crea la rama
