@@ -109,7 +109,7 @@ br {
     font-size: 110px;
     color: #000;
     padding: 40px;
-    margin-top: 120px;
+    margin-top: 50px;
     margin-right: 370px;
     margin-left: 30px;
 }
@@ -117,7 +117,7 @@ br {
 .container_img{
     display: flex;
     flex-wrap: wrap;
-    padding: 50px;
+    /*padding: 50px;*/
 }
 
 .container_img_txt{
@@ -157,14 +157,48 @@ br {
 }
 
 .lineas_punteadas{
+    display: flex;
+    position: relative;
     border-bottom: 2px dashed black;
     border-top: 2px dashed black;
-    padding: 10px;
+    padding: 5px;
     margin-left: 70px;
     margin-top: 40px;
     margin-bottom: 40px;
     width: 70%;
-    background-image: linear-gradient(to right, #fff 40%, transparent 40%, transparent 60%, #fff 60%);
-    background-size: 60px 70px; 
-    height: 3px; 
+    height: 1px; 
+    justify-content: center;
+}
+
+.p_ApercuMono_fecha{
+    font-family: 'ApercuMono';
+    font-size: 12px;
+    text-align: center;
+}
+
+.p_ApercuMono_content{
+    font-family: 'ApercuMono';
+    font-size: 16px;
+    width: 280px;
+    text-align: center;
+}
+
+.btn_see_all{
+    border: 1px solid black;
+    position: absolute;
+    font-family: 'ApercuMono';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.btn_see_all:hover{
+    background-color: black;
+    color: white;
 }
