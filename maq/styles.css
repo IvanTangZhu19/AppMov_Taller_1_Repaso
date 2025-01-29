@@ -131,3 +131,40 @@ br {
 .img_container_size {
     width: 300px;
 }
+
+.container2{
+    margin-left: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.content3{
+    display: flex;
+    font-family: 'Ogg';
+    font-size: 75px;
+    color: #000;
+    width: 200px;
+    line-height: 1.2;
+}
+
+.container2 .letras_chinas{
+    font-size: 60px;
+    color: white;
+    -webkit-text-stroke: 0.5px #000;
+}
+
+.lineas_punteadas{
+    border-bottom: 2px dashed black;
+    border-top: 2px dashed black;
+    padding: 10px;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    background-image: linear-gradient(to right, #fff 40%, transparent 40%, transparent 60%, #fff 60%);
+    background-size: 60px 70px; 
+    height: 3px; 
+}

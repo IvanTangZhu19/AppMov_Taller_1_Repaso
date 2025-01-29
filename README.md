@@ -1,6 +1,6 @@
 # AppMov_Taller_1_Repaso
 
-Rama: maquetacion
+Rama: proyecto
 
 Taller 1 del curso de Aplicaciones Móviles
 
