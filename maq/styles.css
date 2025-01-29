@@ -1,6 +1,19 @@
+@font-face {
+    font-family: 'ApercuMono';
+    src: url(fonts/ApercuMonoProRegular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ogg';
+    src: url(fonts/Ogg-Regular.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
-    font-family: 'bodoni', serif;
     background-color: #fff;
 }
 
@@ -20,13 +33,14 @@ body {
 
 .content {
     display: flex;
-    font-family: 'Didot';
+    font-family: 'Ogg';
     font-size: 70px;
     color: #000;
     padding: 40px;
     margin-top: 160px;
-    margin-right: 370px;
+    margin-right: 300px;
     margin-left: 30px;
+    line-height: 1.2;
 }
 
 .vertical-tabs {
@@ -36,7 +50,7 @@ body {
     height: 820px;
     top: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
 }
 
 .tab {
@@ -87,4 +101,33 @@ br {
     margin-top: 50px;
     width: 1170px;
     left: 0;
+}
+
+.content2{
+    display: flex;
+    font-family: 'Ogg';
+    font-size: 110px;
+    color: #000;
+    padding: 40px;
+    margin-top: 120px;
+    margin-right: 370px;
+    margin-left: 30px;
+}
+
+.container_img{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.container_img_txt{
+    padding: 40px;
+    flex-direction: column;
+    width: 280px;
+    font-family: 'ApercuMono';
+    font-size: 13px;
+}
+
+.img_container_size {
+    width: 300px;
 }
