@@ -24,7 +24,7 @@ body {
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: 60px;
     left: 50px;
     width: 100px;
@@ -133,12 +133,12 @@ br {
 }
 
 .container2{
-    margin-left: 70px;
+    margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 80%;
 }
 
 .content3{
@@ -162,10 +162,10 @@ br {
     border-bottom: 2px dashed black;
     border-top: 2px dashed black;
     padding: 5px;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 70%;
+    width: 80%;
     height: 1px; 
     justify-content: center;
 }
@@ -196,9 +196,79 @@ br {
     padding-left: 40px;
     padding-right: 40px;
     cursor: pointer;
+    background-color: white;
 }
 
 .btn_see_all:hover{
     background-color: black;
     color: white;
+}
+
+.container_punteado{
+    width: 450px;
+    margin-top: 50px;
+    display: flex;
+    border: 2px dashed black;
+    align-items: center;
+    justify-items: center;
+}
+
+.texto{
+    font-family: 'Ogg';
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.width_height_texto{
+    width: 450px;
+    height: 300px;
+}
+
+.linea{
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 80%; /* Ancho de la línea */
+    height: 10px; /* Grosor de la línea */
+    background: repeating-linear-gradient(
+        -60deg, /* Ángulo de las líneas */
+        gray, /* Color inicial */
+        gray 1px, /* Espesor de la línea negra */
+        white 2px, /* Espesor del espacio blanco */
+        white 4px /* Espaciado total */
+    );
+}
+
+.container3{
+    width: 80%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ogg';
+    font-size: 45px;
+    text-align: center;
+}
+
+.btn_click_here{
+    margin: 0;
+    width: 170px;
+    border: 1px solid black;
+    font-family: 'ApercuMono';
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn_click_here:hover{
+    background-color: black;
+    color: white;
+}
+
+.p_margin{
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
