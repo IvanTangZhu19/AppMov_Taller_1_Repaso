@@ -272,3 +272,65 @@ br {
     margin-bottom: 30px;
     margin-top: 50px;
 }
+
+.container_punteado2{
+    display: flex;
+    width: 300px;
+    height: 180px;
+    margin-top: 50px;
+    flex-direction: column;
+    border: 2px dashed black;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_punteado2 .texto{
+    font-family: 'ApercuMono';
+    font-size: 14px;
+    text-align: center;
+    width: 150px;
+}
+
+.fa-pencil {
+    color: black;
+    font-size: 30px;
+}
+
+.fa-facebook{
+    color: black;
+    font-size: 30px;
+}
+
+.fa-instagram{
+    color: black;
+    font-size: 30px;
+}
+
+.container_punteado3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 76%;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 75px;
+    flex-direction: column;
+    border: 2px dashed black;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.container_punteado3 .texto{
+    font-family: 'ApercuMono';
+    font-size: 22px;
+    width: 260px;
+    text-align: left;
+}
+
+.input_email{
+    margin-left: 60px;
+    width: 50%;
+    height: 50px;
+    font-family: 'ApercuMono';
+    font-size: 14px;
+}
