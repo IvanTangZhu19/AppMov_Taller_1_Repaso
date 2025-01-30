@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'ApercuMono';
+    src: url(fonts/ApercuMonoProBold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
     font-family: 'Ogg';
     src: url(fonts/Ogg-Regular.otf) format(opentype);
     font-weight: normal;
@@ -282,6 +289,7 @@ br {
     border: 2px dashed black;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .container_punteado2 .texto{
@@ -318,6 +326,7 @@ br {
     justify-content: center;
     align-content: center;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .container_punteado3 .texto{
@@ -333,4 +342,32 @@ br {
     height: 50px;
     font-family: 'ApercuMono';
     font-size: 14px;
+    border-color: 2px black;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 30px;
+}
+.footer_links2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 200px;
+}
+
+.texto_tachado{
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.texto_footer{
+    font-family: 'ApercuMono';
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
 }
