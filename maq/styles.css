@@ -151,7 +151,7 @@ br {
 .content3{
     display: flex;
     font-family: 'Ogg';
-    font-size: 75px;
+    font-size: 85px;
     color: #000;
     width: 200px;
     line-height: 1.2;
@@ -163,21 +163,38 @@ br {
     -webkit-text-stroke: 0.5px #000;
 }
 
-.lineas_punteadas{
+.lineas_discontinuas_der{
     display: flex;
     position: relative;
     border-bottom: 2px dashed transparent;
     border-top: 2px dashed transparent;
-    padding: 5px;
+    padding: 8px;
     margin-left: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
     width: 80%;
-    height: 1px; 
+    height: 4px; 
     justify-content: center;
-    background: linear-gradient(to right, black 50%, transparent 50%) 0 0 / 10px 2px repeat-x,
-    linear-gradient(to right, black 50%, transparent 50%) 0 0 / 10px 2px repeat-x;
-    animation: moveDashed 1s linear infinite;
+    background: linear-gradient(to right, black 50%, transparent 50%) 0 0 / 20px 1px repeat-x,
+    linear-gradient(to right, black 50%, transparent 50%) 0 0 / 20px 1px repeat-x;
+    animation: moveDashedDer 0.4s linear infinite;
+}
+
+.lineas_discontinuas_izq{
+    display: flex;
+    position: relative;
+    border-bottom: 2px dashed transparent;
+    border-top: 2px dashed transparent;
+    padding: 8px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 80%;
+    height: 4px; 
+    justify-content: center;
+    background: linear-gradient(to left, black 50%, transparent 50%) 0 0 / 20px 1px repeat-x,
+    linear-gradient(to left, black 50%, transparent 50%) 0 0 / 20px 1px repeat-x;
+    animation: moveDashedIzq 0.4s linear infinite;
 }
 
 .p_ApercuMono_fecha{
@@ -216,30 +233,27 @@ br {
 
 .container_discontinuo{
     width: 450px;
+    height: 300px;
     margin-top: 50px;
     display: flex;
-    border: 2px solid transparent;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    text-align: center;
     cursor: pointer;
     position: relative;
+    background: repeating-linear-gradient(90deg, black 0px, black 20px, transparent 20px, transparent 30px),
+                repeating-linear-gradient(180deg, black 0px, black 20px, transparent 20px, transparent 30px),
+                repeating-linear-gradient(270deg, black 0px, black 20px, transparent 20px, transparent 30px),
+                repeating-linear-gradient(0deg, black 0px, black 20px, transparent 20px, transparent 30px);
+    
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-position 0.2s;
 }
 
-.container_discontinuo::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border: 2px dashed black;
-    border-radius: 5px; /* Para suavizar esquinas */
-    animation: none; /* Inicia sin animación */
-}
-
-.container_discontinuo:hover::before {
-    animation: rotateDashed 1s linear infinite;
+.container_discontinuo:hover {
+    animation: moveDashed 0.4s linear infinite;
 }
 
 .texto{
@@ -252,6 +266,12 @@ br {
 .width_height_texto{
     width: 450px;
     height: 300px;
+}
+
+.width_height_img{
+    margin: 0;
+    width: 440px;
+    height: 290px;
 }
 
 .linea{
@@ -308,12 +328,24 @@ br {
     height: 180px;
     margin-top: 50px;
     flex-direction: column;
-    border: 2px dashed black;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     position: relative;
     animation: moverYGirar 4s infinite linear;
+    background: repeating-linear-gradient(90deg, black 0px, black 20px, transparent 20px, transparent 30px),
+                repeating-linear-gradient(180deg, black 0px, black 20px, transparent 20px, transparent 30px),
+                repeating-linear-gradient(270deg, black 0px, black 20px, transparent 20px, transparent 30px),
+                repeating-linear-gradient(0deg, black 0px, black 20px, transparent 20px, transparent 30px);
+    
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease;
+}
+
+.container_discontinuo2:hover {
+    animation: moveDashed 0.4s linear infinite;
 }
 
 .container_discontinuo2 .texto{
@@ -346,11 +378,23 @@ br {
     margin-top: 50px;
     margin-left: 75px;
     flex-direction: column;
-    border: 2px dashed black;
     justify-content: center;
     align-content: center;
     margin-bottom: 20px;
     cursor: pointer;
+    background: repeating-linear-gradient(90deg, black 0px, black 20px, transparent 20px, transparent 30px),
+                repeating-linear-gradient(180deg, black 0px, black 20px, transparent 20px, transparent 30px),
+                repeating-linear-gradient(270deg, black 0px, black 20px, transparent 20px, transparent 30px),
+                repeating-linear-gradient(0deg, black 0px, black 20px, transparent 20px, transparent 30px);
+    
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease;
+}
+
+.container_discontinuo3:hover {
+    animation: moveDashed 0.4s linear infinite;
 }
 
 .container_discontinuo3 .texto{
@@ -396,31 +440,29 @@ br {
     color: black;
 }
 
-@keyframes moveDashed {
+@keyframes moveDashedDer {
     from {
         background-position: 0 0, 0 100%;
     }
     to {
-        background-position: 10px 0, 10px 100%;
+        background-position: 20px 0, 20px 100%;
     }
 }
 
-@keyframes moveDashedContainer {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 40px 40px; /* Ajusta la velocidad del movimiento */
-    }
-}
-
-@keyframes rotateDashed {
+@keyframes moveDashedIzq {
     from {
-        clip-path: inset(0% 0% 0% 0%);
-        transform: rotate(0deg);
+        background-position: 20px 0, 20px 100%;
     }
     to {
-        clip-path: inset(0% 0% 0% 0%);
-        transform: rotate(360deg);
+        background-position: 0 0, 0 100%;
+    }
+}
+
+@keyframes moveDashed {
+    0% {
+        background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    }
+    100% {
+        background-position: 30px 0, 100% calc(100% + 30px) , calc(100% - 30px) 100%, 0 -30px;
     }
 }
