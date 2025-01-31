@@ -166,8 +166,8 @@ br {
 .lineas_punteadas{
     display: flex;
     position: relative;
-    border-bottom: 2px dashed black;
-    border-top: 2px dashed black;
+    border-bottom: 2px dashed transparent;
+    border-top: 2px dashed transparent;
     padding: 5px;
     margin-left: 50px;
     margin-top: 40px;
@@ -175,6 +175,9 @@ br {
     width: 80%;
     height: 1px; 
     justify-content: center;
+    background: linear-gradient(to right, black 50%, transparent 50%) 0 0 / 10px 2px repeat-x,
+    linear-gradient(to right, black 50%, transparent 50%) 0 0 / 10px 2px repeat-x;
+    animation: moveDashed 1s linear infinite;
 }
 
 .p_ApercuMono_fecha{
@@ -211,13 +214,32 @@ br {
     color: white;
 }
 
-.container_punteado{
+.container_discontinuo{
     width: 450px;
     margin-top: 50px;
     display: flex;
-    border: 2px dashed black;
+    border: 2px solid transparent;
     align-items: center;
     justify-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.container_discontinuo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px dashed black;
+    border-radius: 5px; /* Para suavizar esquinas */
+    animation: none; /* Inicia sin animación */
+}
+
+.container_discontinuo:hover::before {
+    animation: rotateDashed 1s linear infinite;
 }
 
 .texto{
@@ -280,7 +302,7 @@ br {
     margin-top: 50px;
 }
 
-.container_punteado2{
+.container_discontinuo2{
     display: flex;
     width: 300px;
     height: 180px;
@@ -290,9 +312,11 @@ br {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
+    animation: moverYGirar 4s infinite linear;
 }
 
-.container_punteado2 .texto{
+.container_discontinuo2 .texto{
     font-family: 'ApercuMono';
     font-size: 14px;
     text-align: center;
@@ -314,7 +338,7 @@ br {
     font-size: 30px;
 }
 
-.container_punteado3{
+.container_discontinuo3{
     display: flex;
     flex-wrap: wrap;
     width: 76%;
@@ -329,7 +353,7 @@ br {
     cursor: pointer;
 }
 
-.container_punteado3 .texto{
+.container_discontinuo3 .texto{
     font-family: 'ApercuMono';
     font-size: 22px;
     width: 260px;
@@ -370,4 +394,33 @@ br {
     font-size: 12px;
     font-weight: bold;
     color: black;
+}
+
+@keyframes moveDashed {
+    from {
+        background-position: 0 0, 0 100%;
+    }
+    to {
+        background-position: 10px 0, 10px 100%;
+    }
+}
+
+@keyframes moveDashedContainer {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 40px; /* Ajusta la velocidad del movimiento */
+    }
+}
+
+@keyframes rotateDashed {
+    from {
+        clip-path: inset(0% 0% 0% 0%);
+        transform: rotate(0deg);
+    }
+    to {
+        clip-path: inset(0% 0% 0% 0%);
+        transform: rotate(360deg);
+    }
 }
