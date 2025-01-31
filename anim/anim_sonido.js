@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Sonidos
   const sounds = {
-      nube: new Audio('./bang-smoke-cloud-1-184061.mp3'),
+      nube: new Audio('./sonido-de-viento-159611.mp3'),
       bici: new Audio('./bike-bell-40094.mp3'),
       arbol: new Audio('./hit-tree-01-266310.mp3'),
-      sol: new Audio('./surface-of-the-sun-30475.mp3')
+      sol: new Audio('./cardinal-37075.mp3')
   };
 
   // Configurar draggables
