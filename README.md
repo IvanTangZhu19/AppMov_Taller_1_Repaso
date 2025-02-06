@@ -6,12 +6,12 @@ Taller 1 del curso de Aplicaciones Móviles
 
 - Explicacion de las ramas:
 
-  - css: Retos de css dinner https://flukeout.github.io/
-  - flexbox: Retos de flex froggy https://flexboxfroggy.com/#es
-  - gridlayout: Retos de gridgarden https://cssgridgarden.com/#es
-  - reto: Programas de Javascript de animación/sonido y texto
+  - css: Retos de css dinner (Cena) https://flukeout.github.io/
+  - flexbox: Retos de flex froggy (Rana) https://flexboxfroggy.com/#es
+  - gridlayout: Retos de gridgarden (Jardin) https://cssgridgarden.com/#es
+  - reto: Programas de Javascript de animación/sonido y texto que cuenta caracteres
   - diagrama: Imagenes del diagrama de clases en papel y digital
-  - proyecto: Imagenes, fuentes, archivo HTML y CSS de la pagina elegida
+  - proyecto: Imagenes, fuentes utilizadas, archivo HTML y CSS de la pagina elegida
 
 - Comandos utilizados:
   - `git branch [nombre rama]`: Crea la rama
