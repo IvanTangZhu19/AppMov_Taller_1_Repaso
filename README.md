@@ -4,6 +4,10 @@ Rama: main
 
 Taller 1 del curso de Aplicaciones Móviles
 
+Integrantes:
+Ivan Tang Zhu
+David Zapata Obando
+
 - Explicacion de las ramas:
 
   - css: Retos de css dinner (Cena) https://flukeout.github.io/
