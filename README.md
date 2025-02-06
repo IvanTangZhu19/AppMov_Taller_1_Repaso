@@ -5,8 +5,9 @@ Rama: main
 Taller 1 del curso de Aplicaciones Móviles
 
 Integrantes:
-Ivan Tang Zhu
-David Zapata Obando
+
+- Ivan Tang Zhu
+- David Zapata Obando
 
 - Explicacion de las ramas:
 
